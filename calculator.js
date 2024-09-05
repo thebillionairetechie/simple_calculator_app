@@ -2,7 +2,7 @@ let x = 5
 let operator = "add"
 let y = 3
 const calculator = (x, operator, y) =>{
-    if (typeof "x" !== "number" && typeof "y" !== "number"){
+    if (typeof x !== "number" || typeof y !== "number"){
         return "Both inputs must be digits."
     }
     if (operator === "add"){
